@@ -1,0 +1,49 @@
+.card-container form {
+    margin-bottom: 30px;
+}
+
+.loading {
+    width: 20px;
+    height: 20px;
+    background-color: #f33;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    animation: pulsar 1s infinite;
+}
+
+.list-group-item {
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #ddddd3;
+}
+
+.list-group-item .list-group-item-heading,
+.list-group-item .list-group-item-text {
+    color: #333;
+}
+
+.list-group-item .list-group-item-heading:hover,
+.list-group-item .list-group-item-text:hover {
+    text-decoration: none;
+}
+
+.list-group-item .list-group-item-text {
+    width: 100%;
+    display: block;
+}
+
+@keyframes pulsar {
+    50% {
+        width: 30px;
+        height: 30px;
+    }
+
+    100% {
+        width: 20px;
+        height: 20px;
+    }
+}
